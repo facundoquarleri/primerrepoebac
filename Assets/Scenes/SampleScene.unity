@@ -582,6 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afdb1d0d4fe7d97478147ccfc37b3d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CrearCuboOnEnableOnDisable
+  prefabcubo: {fileID: 745490315493218841, guid: 55bda7fe08010d042a6c60f00daaa749, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d57909283144dc42a961a7a5de198e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CrearCuboAwake
+  prefabcubo: {fileID: 745490315493218841, guid: 55bda7fe08010d042a6c60f00daaa749, type: 3}
 --- !u!4 &1452533190
 Transform:
   m_ObjectHideFlags: 0
@@ -1163,6 +1165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1657898367}
+  - component: {fileID: 1657898368}
   m_Layer: 0
   m_Name: CuboUpdate
   m_TagString: Untagged
@@ -1185,6 +1188,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657898368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657898366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a9ed86137893040a128b2bb855ff6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreaCuboenUpdate
+  prefabcubo: {fileID: 745490315493218841, guid: 55bda7fe08010d042a6c60f00daaa749, type: 3}
 --- !u!1 &1713720705
 GameObject:
   m_ObjectHideFlags: 0
