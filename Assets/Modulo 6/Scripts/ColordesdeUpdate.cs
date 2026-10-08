@@ -6,7 +6,7 @@ public class ColordesdeUpdate : MonoBehaviour
 
     private void Awake()
     {
-        miRenderer = GetComponent<MeshRenderer>();
+        /*miRenderer = GetComponent<MeshRenderer>();*/
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,8 +18,8 @@ public class ColordesdeUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Color colorAleatorio = new Color(Random.value, Random.value, Random.value);
-        miRenderer.material.color = colorAleatorio;
+        /*Color colorAleatorio = new Color(Random.value, Random.value, Random.value);
+        miRenderer.material.color = colorAleatorio;*/
 
     }
 }

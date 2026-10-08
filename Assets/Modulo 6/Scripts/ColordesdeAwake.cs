@@ -5,12 +5,12 @@ using UnityEngine;
 public class ColordesdeAwake : MonoBehaviour
 
 {
-    private MeshRenderer miRenderer;
+    /*private MeshRenderer miRenderer;*/
     private void Awake()
     {
-        miRenderer = GetComponent<MeshRenderer>();
+        /*miRenderer = GetComponent<MeshRenderer>();
         Color colorAleatorio = new Color(Random.value, Random.value, Random.value);
-        miRenderer.material.color = colorAleatorio;
+        miRenderer.material.color = colorAleatorio;*/
 
     }
 
