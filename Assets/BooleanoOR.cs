@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ColoresdeFixedUpdate : MonoBehaviour
+public class BooleanoOR : MonoBehaviour
 {
-    
-    public bool mivalor = false;
-
+    public GameObject go1;
+    public GameObject go2;
+    public bool mivalor;
     private MeshRenderer miRenderer;
 
     private void Awake()
     {
         miRenderer = GetComponent<MeshRenderer>();
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,17 +25,20 @@ public class ColoresdeFixedUpdate : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        /*Color colorAleatorio = new Color (Random.value, Random.value, Random.value);
-        miRenderer.material.color = colorAleatorio;*/
-        mivalor = !mivalor;
+        bool valor1 = go1.GetComponent<BooleanoFixedUpdate>().mivalor;
+        bool valor2 = go2.GetComponent<BooleanoFixedUpdate>().mivalor;
+        mivalor = valor1 || valor2;
         if (mivalor)
         {
             miRenderer.material.color = Color.white;
+        
         }
         else
         {
             miRenderer.material.color = Color.black;
 
+
         }
+
     }
 }
